@@ -6,16 +6,17 @@ class Stack {
     }
   
     pop() {
-      return this.#list.pop()
+      return this.#list.length ? this.#list.pop() : null;
     }
   
     peek() {
+      //or return this.#list.at(-1)
       const arrLength = this.#list.length - 1
-      return this.#list[arrLength]
+      return this.#list.length ? this.#list[arrLength] : null;
     }
   
     get size() {
-      //implement me
+      return this.#list.length;
     }
   }
   const stack = new Stack;

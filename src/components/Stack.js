@@ -19,7 +19,16 @@ class Stack {
       return this.#list.length;
     }
   }
-  const stack = new Stack;
-  const add = stack.push('ted');
-  console.log(add)
-  export default Stack;
+
+
+  const stack = new Stack();
+
+  stack.push('ted');
+  stack.push('tracy');
+  stack.push('hailey');
+
+  stack.pop()
+  
+  console.log(stack.peek())
+
+  

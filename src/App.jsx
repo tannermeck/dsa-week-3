@@ -1,5 +1,3 @@
-import Stack from "./components/stack";
-
 export default function App() {
-  return <Stack />
+  return <h1>Hello World</h1>
 }
